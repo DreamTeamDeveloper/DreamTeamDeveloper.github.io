@@ -12,11 +12,15 @@
   justify-content: space-between;
   padding: 0 2rem;
   @media @tablet{
-    height: 19vh;
+    height: 16vh;
   }
   @media @mobile-sm{
     padding: 0 0.5rem;
   }
+}
+.nav__menu--h{
+  height: 40vh;
+  transition: all 0.4s linear;
 }
 .nav__list {
   width: 70%;
@@ -33,7 +37,7 @@
     flex-direction: column;
     width: 70%;
     align-items: flex-end;  justify-content: center; 
-    padding-right: 2rem;
+    padding-right: 1rem;
   }
 }
 .nav__logo {
@@ -54,9 +58,14 @@
   }
   @media @tablet{
     margin-left: 0;
+    margin-bottom: 0.8rem;
+  
   }
   @media @mobile-h{
-    line-height: 0.5;
+    line-height: 0.6;
+    &:last-child{
+      line-height: 0;
+    }
   }
   &:first-child {
     margin-left: 0;
@@ -73,7 +82,7 @@
     font-weight: 700;
   }
   @media @mobile-h{
-    font-size: 0.6rem;
+    font-size: 1rem;
   }
   &:after {
     content: "";

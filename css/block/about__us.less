@@ -29,13 +29,13 @@
   @media @mobile {
     padding: 0 1rem;
   }
-  @media @mobile-sm{
+  @media @mobile-sm {
     padding: 0 0.5rem;
   }
-  @media @notebook-h{
+  @media @notebook-h {
     margin-top: 2vh;
   }
-  @media @mobile-h{
+  @media @mobile-h {
     margin-top: 1vh;
   }
 }
@@ -69,10 +69,10 @@
     @media @mobile {
       font-size: 1rem;
     }
-    @media @mobile-sm{
+    @media @mobile-sm {
       font-size: 0.7rem;
     }
-    @media @mobile-h{
+    @media @mobile-h {
       font-size: 0.4rem;
     }
   }
@@ -87,7 +87,7 @@
     @media @mobile-sm {
       font-size: 1rem;
     }
-    @media @mobile-h{
+    @media @mobile-h {
       font-size: 0.6rem;
     }
   }
@@ -95,31 +95,34 @@
 .content__block {
   position: absolute;
   z-index: 2;
-  margin-top: 40vh;
+  margin-top: 30rem;
   display: flex;
+  @media @lcd {
+    margin-top: 25rem;
+  }
   @media @notebook {
     padding: 0 2.5rem;
-    margin-top: 36vh;
+    margin-top: 22rem;
   }
   @media @tablet {
-    margin-top: 30vh;
+    margin-top: 17rem;
   }
   @media @mobile {
     flex-wrap: wrap;
-    margin-top: 20vh;
+    margin-top: 10rem;
   }
-  @media @mobile-sm{
-    margin-top: 18vh;
+  @media @mobile-sm {
     padding: 0 1.8rem;
+    margin-top: 9rem;
   }
-  @media @notebook-h{
-    margin-top: 30vh;
+  @media @notebook-h {
+    @media @mobile-sm {
+      margin-top: 9rem;
+    }
+    margin-top: 17rem;
   }
-  @media (max-height: 670px){
-    margin-top: 19vh;
-  }
-  @media @mobile-h{
-    margin-top: 16vh;
+  @media @mobile-h {
+    margin-top: 4rem;
   }
 }
 .content__block--colum {
@@ -181,7 +184,7 @@
       font-size: 1rem;
       margin-bottom: 0.3rem;
     }
-    @media @mobile-h{
+    @media @mobile-h {
       font-size: 0.6rem;
     }
   }
@@ -197,10 +200,16 @@
     @media @mobile {
       font-size: 0.8rem;
     }
-    @media @mobile-sm{
+    @media @mobile-sm {
       font-size: 0.7rem;
     }
-    @media @mobile-h{
+    @media @notebook-h {
+      font-size: 1rem;
+      @media @mobile-sm {
+        font-size: 0.7rem;
+      }
+    }
+    @media @mobile-h {
       font-size: 0.4rem;
     }
   }
