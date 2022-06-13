@@ -1,0 +1,138 @@
+//main: ../style.less
+.preview__title {
+  margin-top: 3.12rem;
+  width: 100%;
+  text-align: center;
+  h2 {
+    font-size: 1.65rem;
+    color: @black;
+    font-weight: 700;
+    text-transform: uppercase;
+    @media @tablet {
+      font-size: 1.45rem;
+    }
+    @media @mobile {
+      font-size: 1.25rem;
+    }
+    @media @mobile-sm {
+      font-size: 1.15rem;
+    }
+    @media @mobile-xsm {
+      font-size: 1.05rem;
+    }
+  }
+  h3 {
+    font-size: 1.1rem;
+    color: @black;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+    @media @mobile-sm {
+      font-size: 1rem;
+    }
+    @media @mobile-xsm {
+      font-size: 0.9rem;
+    }
+  }
+  @media @tablet {
+    margin-top: 2.12rem;
+  }
+  @media @mobile {
+    margin-top: 1.12rem;
+  }
+  @media @mobile-sm {
+    margin-top: 1rem;
+  }
+}
+.preview__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 3.12rem;
+  @media @tablet {
+    margin-top: 2.12rem;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  @media @mobile {
+    margin-top: 1.12rem;
+  }
+  @media @mobile-sm {
+    margin-top: 1rem;
+  }
+}
+.preview__col {
+  width: 50%;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  &:nth-child(1) {
+    margin-bottom: 1.65rem;
+  }
+  &:nth-child(2) {
+    margin-bottom: 1.65rem;
+  }
+  h5 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    font-style: normal;
+    color: @black;
+    text-transform: uppercase;
+    &:last-child {
+      margin-top: 0.4rem;
+    }
+  }
+  &:after {
+    content: attr(data-title);
+    position: absolute;
+    z-index: 2;
+    bottom: 20%;
+    right: 10%;
+    width: 35%;
+    height: 2rem;
+    line-height: 32px;
+    text-align: center;
+    background-color: @pink;
+    font-size: 1.1rem;
+    color: @black;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 0.4s linear, visibility 0.4s linear;
+    -o-transition: opacity 0.4s linear, visibility 0.4s linear;
+    transition: opacity 0.4s linear, visibility 0.4s linear;
+  }
+  &:hover {
+    &::after {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  @media @tablet {
+    &:nth-child(1) {
+      margin-bottom: 1.5rem;
+    }
+    &:nth-child(2) {
+      margin-bottom: 1.5rem;
+    }
+    width: 60%;
+    margin-bottom: 1.5rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  @media @mobile {
+    width: 80%;
+  }
+  @media @mobile-sm {
+    width: 100%;
+  }
+}

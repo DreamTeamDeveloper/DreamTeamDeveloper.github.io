@@ -1,0 +1,65 @@
+//sourceMap: true, compress: true
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap');
+html{
+  font-size: 16px;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+  color: @black;
+  margin: 0;
+  padding: 0;
+  background-color: @white;
+  overflow-x: hidden;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+a {
+  &:focus {
+    outline: none;
+  }
+}
+/*main block style*/
+/*help*/
+@import "help.less";
+/*var*/
+@import "var.less";
+/*container*/
+@import "block/container.less";
+/*intro*/
+@import "block/intro.less";
+/*header*/
+@import "block/header.less";
+/*btn*/
+@import "block/btn.less";
+/*preview*/
+@import "block/preview.less";
+/*technologies*/
+@import "block/technologies.less";
+/*services*/
+@import "block/services.less";
+/*footer*/
+@import "block/footer.less";
+/*back top*/
+@import "block/back__top.less";
+/*preloader*/
+@import "block/preloader.less";
+/*vendor style*/
+/*animate css https://daneden.github.io/animate.css/*/
+@import "vendor/animate.less";
